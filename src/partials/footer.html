@@ -1,0 +1,38 @@
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <div class="footer-brand">
+      <p class="logo__name">Neal Pottery</p>
+      <p class="muted">Functional stoneware and high-fired art pieces by Greg &amp; Amy Neal. Wheel thrown or hand built, with glazes mixed in our studio.</p>
+    </div>
+    <div>
+      <p class="kicker">Neal Pottery</p>
+      <ul>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">The Studio</a></li>
+        <li><a href="shows.html">Art Shows</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="kicker">Shop &amp; Social</p>
+      <ul>
+        <li><a href="{{shop_url}}" target="_blank" rel="noopener">Etsy</a></li>
+        <li><a href="https://www.instagram.com/nealpottery/" target="_blank" rel="noopener">Instagram</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="kicker">Find us</p>
+      <p class="muted">Central Florida studio. Meet us in person at juried art shows across the South and Midwest.</p>
+      <a class="link-arrow" href="shows.html">Upcoming shows</a>
+    </div>
+  </div>
+  <p class="site-footer__legal">© {{year}} Neal Pottery · Greg &amp; Amy Neal</p>
+</footer>
+<script>
+  const t = document.querySelector(".nav-toggle");
+  t.addEventListener("click", () => {
+    const open = t.getAttribute("aria-expanded") === "true";
+    t.setAttribute("aria-expanded", String(!open));
+    document.body.classList.toggle("nav-open", !open);
+  });
+</script>

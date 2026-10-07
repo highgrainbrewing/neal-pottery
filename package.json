@@ -1,0 +1,11 @@
+{
+  "name": "neal-pottery",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "etsy": "node scripts/fetch-etsy.mjs",
+    "build": "node scripts/fetch-etsy.mjs && node scripts/build.mjs",
+    "dev": "node scripts/build.mjs && npx --yes serve dist"
+  },
+  "engines": { "node": ">=20" }
+}

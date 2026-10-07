@@ -1,0 +1,14 @@
+# Rebuilds the site every morning so new and sold-out Etsy listings show up
+# without anyone touching the code. NETLIFY_BUILD_HOOK is a repo secret
+# (Netlify: Site configuration > Build & deploy > Build hooks).
+name: Refresh Etsy listings
+on:
+  schedule:
+    - cron: "0 11 * * *"
+  workflow_dispatch:
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Netlify build
+        run: curl -fsS -X POST -d '{}' "${{ secrets.NETLIFY_BUILD_HOOK }}"

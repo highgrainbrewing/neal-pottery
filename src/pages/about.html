@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Studio | Neal Pottery</title>
+  <meta name="description" content="Meet Greg and Amy Neal, the potters behind Neal Pottery's handmade stoneware.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+{{> header}}
+<main id="main">
+  <section class="page-head">
+    <p class="kicker">The studio</p>
+    <h1 class="display display--dark">Combining Art <em>with</em> Function</h1>
+  </section>
+
+  <section class="split">
+    <div class="split__media split__media--clay">{{art_vase}}</div>
+    <div class="split__copy">
+      <p class="kicker">Greg Neal</p>
+      <h2 class="title">Forty years at the wheel</h2>
+      <p>Raised in Ohio and now working in Central Florida, Greg is a self-taught potter who has been a full-time artist for more than forty years. Most of that time has been spent on the road at juried art shows across the Midwest and the South.</p>
+    </div>
+  </section>
+
+  <section class="split split--reverse">
+    <div class="split__media split__media--denim">{{art_bowl}}</div>
+    <div class="split__copy">
+      <p class="kicker">Amy Neal</p>
+      <h2 class="title">Studio, shows and every order</h2>
+      <p>Amy joined the business in 2006. She works in the studio and at shows, and she looks after online sales and customer service, which is why our Etsy reviews read the way they do.</p>
+    </div>
+  </section>
+
+  <section class="section section--tint values">
+    <div>
+      <p class="kicker">How it's made</p>
+      <h3>Wheel thrown or hand built</h3>
+      <p class="muted">Every piece is shaped by hand: functional stoneware for daily use alongside a line of high-fired art pieces.</p>
+    </div>
+    <div>
+      <p class="kicker">Our glazes</p>
+      <h3>Mixed in our studio</h3>
+      <p class="muted">Denim blue, speckled white and our other glazes are custom recipes, mixed by hand.</p>
+    </div>
+    <div>
+      <p class="kicker">Made for use</p>
+      <h3>Safe for everyday</h3>
+      <p class="muted">Lead-free and food safe. Dishwasher, oven and microwave safe.</p>
+    </div>
+  </section>
+</main>
+{{> footer}}
+</body>
+</html>

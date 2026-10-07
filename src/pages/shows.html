@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Art Shows | Neal Pottery</title>
+  <meta name="description" content="Where to find Neal Pottery in person: upcoming art shows and craft fairs.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+{{> header}}
+<main id="main">
+  <section class="page-head">
+    <p class="kicker">In person</p>
+    <h1 class="display display--dark">Art Shows</h1>
+    <p class="muted">The best way to choose a piece is to hold it. Find us at these shows, and see the latest booth photos on <a href="https://www.instagram.com/nealpottery/" target="_blank" rel="noopener">Instagram</a>.</p>
+  </section>
+  <section class="section section--flush-top">
+    {{shows_all}}
+  </section>
+</main>
+{{> footer}}
+</body>
+</html>

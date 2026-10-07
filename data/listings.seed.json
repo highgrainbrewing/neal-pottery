@@ -1,0 +1,116 @@
+{
+  "_note": "Fallback used when ETSY_API_KEY is not set. Real data is fetched from Etsy at build time by scripts/fetch-etsy.mjs.",
+  "shop": {
+    "name": "nealpottery",
+    "url": "https://www.etsy.com/shop/nealpottery",
+    "sales": 28979,
+    "reviews": 7217,
+    "rating": 5.0,
+    "banner": "https://i.etsystatic.com/5813071/r/isbl/b787a4/29556163/isbl_1680x420.29556163_eqvi50rr.jpg"
+  },
+  "sections": [
+    {
+      "id": 1,
+      "title": "Bread Bakers"
+    },
+    {
+      "id": 2,
+      "title": "Bowls"
+    },
+    {
+      "id": 3,
+      "title": "For the Bath"
+    },
+    {
+      "id": 4,
+      "title": "For Jewelry"
+    },
+    {
+      "id": 5,
+      "title": "For the Kitchen"
+    }
+  ],
+  "listings": [
+    {
+      "title": "Ceramic Tissue Dispenser, Speckled White",
+      "price": "55.00",
+      "currency": "USD",
+      "section_id": 3,
+      "url": "https://www.etsy.com/listing/4545686158/ceramic-tissue-dispenser-tissue-jar",
+      "image": null,
+      "glaze": "speckled"
+    },
+    {
+      "title": "Bread Baker with 12 Recipes, Speckled White",
+      "price": "45.00",
+      "currency": "USD",
+      "section_id": 1,
+      "url": "https://www.etsy.com/listing/1560708925/bread-baker-pottery-bread-baking-crock",
+      "image": null,
+      "glaze": "speckled"
+    },
+    {
+      "title": "Bread Baker with 12 Recipes, Blue",
+      "price": "45.00",
+      "currency": "USD",
+      "section_id": 1,
+      "url": "https://www.etsy.com/listing/168685596/bread-baker-pottery-bread-baking-pot-in",
+      "image": null,
+      "glaze": "blue"
+    },
+    {
+      "title": "Berry Bowl, Small, Blue",
+      "price": "35.00",
+      "currency": "USD",
+      "section_id": 2,
+      "url": "https://www.etsy.com/listing/1887893212/berry-bowl-small-berry-strainer-berry",
+      "image": null,
+      "glaze": "blue"
+    },
+    {
+      "title": "Bread Baking Pot with 12 Recipes, Tri-Color",
+      "price": "45.00",
+      "currency": "USD",
+      "section_id": 1,
+      "url": "https://www.etsy.com/listing/79284343/bread-baking-pot-pottery-bread-crock",
+      "image": null,
+      "glaze": "default"
+    },
+    {
+      "title": "Ceramic Tissue Dispenser, Denim Blue",
+      "price": "55.00",
+      "currency": "USD",
+      "section_id": 3,
+      "url": "https://www.etsy.com/listing/4528974652/ceramic-tissue-dispenser-tissue-jar",
+      "image": null,
+      "glaze": "denim"
+    },
+    {
+      "title": "Berry Bowl with Saucer, Blue",
+      "price": "48.00",
+      "currency": "USD",
+      "section_id": 2,
+      "url": "https://www.etsy.com/listing/93588645/berry-bowl-colander-fruit-bowl-with",
+      "image": null,
+      "glaze": "blue"
+    },
+    {
+      "title": "Earring Holder, Denim Blue",
+      "price": "40.00",
+      "currency": "USD",
+      "section_id": 4,
+      "url": "https://www.etsy.com/listing/90194483/earring-holder-earring-bowl-jewelry",
+      "image": null,
+      "glaze": "denim"
+    },
+    {
+      "title": "Rice Bowl with Chopsticks, Denim Blue",
+      "price": "35.00",
+      "currency": "USD",
+      "section_id": 5,
+      "url": "https://www.etsy.com/listing/834076806/rice-bowl-ramen-bowl-pho-bowl-ceramic",
+      "image": null,
+      "glaze": "denim"
+    }
+  ]
+}

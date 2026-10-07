@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shop | Neal Pottery</title>
+  <meta name="description" content="Shop handmade stoneware from Neal Pottery: bread bakers, berry bowls, rice bowls, tissue holders and more. Every order is fulfilled through our Etsy shop.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+{{> header}}
+<main id="main">
+  <section class="page-head">
+    <p class="kicker">The collection</p>
+    <h1 class="display display--dark">Shop</h1>
+    <p class="muted">{{listing_count}} pieces available now. Each one opens in our Etsy shop, where checkout and shipping are handled securely.</p>
+  </section>
+
+  <section class="section section--flush-top">
+    <div class="filters" role="group" aria-label="Filter by category">{{shop_filters}}</div>
+    {{shop_grid}}
+    <p class="shop-note muted">Looking for something you saw at a show? <a href="contact.html">Ask us</a>, we may have it in the studio.</p>
+  </section>
+</main>
+{{> footer}}
+<script>
+  const chips = document.querySelectorAll(".chip");
+  const items = document.querySelectorAll("#shop-grid .product");
+  function apply(filter) {
+    chips.forEach((c) => c.classList.toggle("is-active", c.dataset.filter === filter));
+    items.forEach((i) => (i.hidden = filter !== "all" && i.dataset.section !== filter));
+  }
+  chips.forEach((c) => c.addEventListener("click", () => apply(c.dataset.filter)));
+  // Deep links like shop.html#bread-bakers pick the matching category.
+  const hash = decodeURIComponent(location.hash.slice(1));
+  const match = [...chips].find((c) => c.textContent.toLowerCase().replace(/\s+/g, "-") === hash);
+  if (match) apply(match.dataset.filter);
+</script>
+</body>
+</html>

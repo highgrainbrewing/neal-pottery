@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Neal Pottery | Handmade Stoneware by Greg &amp; Amy Neal</title>
+  <meta name="description" content="Functional, handmade stoneware from Greg and Amy Neal's Central Florida studio. Bread bakers, berry bowls and more, wheel thrown with glazes mixed in our studio.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+{{> header}}
+<main id="main">
+
+  <section class="hero" style="--hero-image: url('{{hero_image}}')">
+    <div class="hero__content">
+      <p class="kicker kicker--light">Over 40 years at the wheel</p>
+      <h1 class="display">Art <em>with</em> Function</h1>
+      <p class="hero__lede">Handmade stoneware for the kitchen, table and home.</p>
+      <a class="btn btn--light" href="shop.html">Shop the collection</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section__head">
+      <div>
+        <p class="kicker">Now available</p>
+        <h2 class="title">From the Studio</h2>
+      </div>
+      <a class="link-arrow" href="shop.html">View all</a>
+    </div>
+    {{featured_grid}}
+  </section>
+
+  <section class="split">
+    <div class="split__media split__media--cream">{{art_bread}}</div>
+    <div class="split__copy">
+      <p class="kicker">Our best seller</p>
+      <h2 class="title">The Bread Baker</h2>
+      <p>Thrown from durable stoneware and glazed inside for an easy release, our bread baker turns out a crisp, golden loaf. Every one ships with twelve of our favorite recipes.</p>
+      <a class="btn" href="shop.html#bread-bakers">Discover the bread bakers</a>
+    </div>
+  </section>
+
+  <section class="proof" aria-label="Shop reviews">
+    <div class="proof__item"><span class="proof__num">{{sales}}</span><span class="kicker">Pieces sold on Etsy</span></div>
+    <div class="proof__item"><span class="proof__num">{{rating}} <span aria-hidden="true">★</span></span><span class="kicker">From {{reviews}} reviews</span></div>
+    <div class="proof__item"><span class="proof__num">Star Seller</span><span class="kicker">Recognized by Etsy</span></div>
+  </section>
+
+  <section class="split split--reverse">
+    <div class="split__media split__media--clay">{{art_vase}}</div>
+    <div class="split__copy">
+      <p class="kicker">A sense of place</p>
+      <h2 class="title">Made by hand in Central Florida</h2>
+      <p>Greg Neal is a self-taught potter who has worked full time at the wheel for more than forty years. Since 2006, Amy has worked alongside him in the studio and at shows. Each piece is wheel thrown or hand built, and every glaze is mixed in our studio.</p>
+      <a class="btn" href="about.html">Meet the potters</a>
+    </div>
+  </section>
+
+  <section class="section section--tint">
+    <div class="section__head">
+      <div>
+        <p class="kicker">Come say hello</p>
+        <h2 class="title">Upcoming Art Shows</h2>
+      </div>
+      <a class="link-arrow" href="shows.html">All shows</a>
+    </div>
+    {{shows_preview}}
+  </section>
+
+  <section class="insta">
+    <p class="kicker">@nealpottery</p>
+    <h2 class="title">Fresh from the kiln</h2>
+    <p class="muted">New glazes, studio days and show booths, shared on Instagram first.</p>
+    <a class="btn" href="https://www.instagram.com/nealpottery/" target="_blank" rel="noopener">Follow on Instagram</a>
+  </section>
+
+</main>
+{{> footer}}
+</body>
+</html>
