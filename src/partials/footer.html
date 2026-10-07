@@ -30,9 +30,12 @@
 </footer>
 <script>
   const t = document.querySelector(".nav-toggle");
-  t.addEventListener("click", () => {
-    const open = t.getAttribute("aria-expanded") === "true";
-    t.setAttribute("aria-expanded", String(!open));
-    document.body.classList.toggle("nav-open", !open);
-  });
+  const setOpen = (open) => {
+    t.setAttribute("aria-expanded", String(open));
+    t.setAttribute("aria-label", open ? "Close menu" : "Menu");
+    document.body.classList.toggle("nav-open", open);
+  };
+  t.addEventListener("click", () => setOpen(t.getAttribute("aria-expanded") !== "true"));
+  document.addEventListener("keydown", (e) => e.key === "Escape" && setOpen(false));
+  window.matchMedia("(min-width: 821px)").addEventListener("change", (e) => e.matches && setOpen(false));
 </script>
