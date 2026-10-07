@@ -54,7 +54,7 @@ async function main() {
     etsy(`/shops/${shop.shop_id}/listings/active?limit=100&includes=Images`),
   ]);
 
-  // The API doesn't expose the full-size shop banner, so keep the one in the seed.
+  // The hero photo (from the old nealpottery.com) is not part of the Etsy API, so keep the one in the seed.
   const seed = JSON.parse(await readFile(SEED, "utf8"));
 
   const data = {

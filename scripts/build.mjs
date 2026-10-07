@@ -112,7 +112,7 @@ async function main() {
       .concat(usedSections.map((s) => `<button class="chip" data-filter="${esc(s.id)}">${esc(s.title)}</button>`))
       .join(""),
     listing_count: String(etsy.listings.length),
-    hero_image: etsy.shop.banner || "",
+    hero_image: existsSync(at("public/img/hero.jpg")) ? "img/hero.jpg" : etsy.shop.banner || "",
     art_bread: vesselSvg("Bread Baker", "speckled"),
     art_vase: vesselSvg("Vase", "default"),
     art_bowl: vesselSvg("Berry Bowl", "denim"),
